@@ -43,9 +43,9 @@ const DATA = [
 ];
 
 
-const DATA_2 = [
+const DATA2 = [
   {
-    id: '122543453453',
+    numero: '122543453453',
     Cliente: 'First Item :',
     Mesa: '10',
     Lanches: '',
@@ -53,13 +53,13 @@ const DATA_2 = [
 
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
+    numero: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
     Cliente: 'Second Item',
     Mesa: '10',
     Lanches: '',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72',
+    numero: '58694a0f-3da1-471f-bd96-145571e29d72',
     Cliente: 'Third Item',
     Mesa: '10',
   Lanches: '',
@@ -93,9 +93,9 @@ const App = () => {
     </SafeAreaView>,
     <View style ={style.segundaBloco}>
       <FlatList
-        data={DATA}
+        data={DATA2}
         renderItem={renderItem}
-        keyExtractor={item => item.id}
+        keyExtractor={item => item.numero}
       />
 
     </View>
@@ -134,6 +134,9 @@ segundaBloco:{// é o bloco pra fazer os flex de baixo
 });
 
 export default App;
+
+
+
 
 
 
