@@ -1,0 +1,34 @@
+import { Body, Text } from 'native-base';
+import React from 'react';
+import { View, StyleSheet, Color,LogBox, SafeAreaView, FlexAlignType, flex, FlatList} from 'react-native';
+import { Header } from 'react-native/Libraries/NewAppScreen';
+
+const App = () => {
+  return (
+    // Try removing the `flex: 1` on the parent View.
+    // The parent will not have dimensions, so the children can't expand.
+    // What if you add `height: 300` instead of `flex: 1`?
+    <View style={{flex: 1}}> 
+      <Text style={{flex: 1, flexDirection:"row", width: 120 , height: 150, borderWidth: 4 , borderStyle: 'solid' , borderColor: 'orange' , backgroundColor: 'blue'}}>Nome:</Text>
+    
+      <Text>Mesa:</Text>
+      
+    </View>
+  );
+};
+
+/*
+const style = StyleSheet.create={
+  Bau:{
+    flex: 1,
+    baackgroundColor: 'blue',
+
+  },
+
+
+};
+
+*/
+
+
+export default App;
