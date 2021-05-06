@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Pedidos from './screens/Pedidos';
 import Cadastro from './screens/Cadastro';
+import Cardapio from './screens/Cardapio';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ const App = () =>
             }}>
             <Stack.Screen name="Mc lanche infeliz" component={Pedidos} />
             <Stack.Screen name="Cadastro" component={Cadastro} />
+            <Stack.Screen name="Cardapio" component={Cardapio} />
           </Stack.Navigator>
         </NavigationContainer>
     );

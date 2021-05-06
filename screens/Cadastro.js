@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import { Button, StyleSheet, Text,  ScrollView, TextInput, View, Keyboard, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text,  ScrollView, TextInput, View, Keyboard, TouchableOpacity } from 'react-native';
+import { Button, Icon } from 'native-base';
 
 export default class CadastroScreen extends React.Component {
+
+  constructor(props){
+    super(props);
+    }
   render() {
     return (
       <View style={styles.container}>
@@ -19,9 +24,21 @@ export default class CadastroScreen extends React.Component {
                     maxLength={20}
                     onBlur={Keyboard.dismiss}
                 />
-                <TouchableOpacity style={styles.enviarButton}>
-                    <Text style={styles.enviarButtonText}>Lanches</Text>
-                </TouchableOpacity>
+                <Button
+                    style={{
+                        height: 60,
+                        width: '100%',
+                        backgroundColor: "#FF0000",
+                        color: "#FFFF00",
+                        justifyContent: 'center',
+                        paddingTop: 10,
+                    }}
+                    onPress={() => {
+                        const navigation = this.props.navigation;
+                        navigation.navigate('Cardapio');
+                    }}>
+                    <Icon type="FontAwesome" name="plus" style={{color: "#FFFF00"}} />
+                </Button>
             </View>
         </ScrollView>
         <View style={styles.inputContainer}>
