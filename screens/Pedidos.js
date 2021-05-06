@@ -131,8 +131,8 @@ export default function PedidosView(props) {
                         justifyContent: 'center',
                     }}
                     onPress={() => {
-                        //const navigation = props.navigation;
-                        //navigation.navigate('');
+                        const navigation = props.navigation;
+                        navigation.navigate('Cadastro');
                         ToastAndroid.showWithGravity(
                             'Clicou no botão de criar pedido',
                             ToastAndroid.SHORT,
