@@ -1,2 +1,0 @@
-# AppMobile
-Trabalho da Faculdade
